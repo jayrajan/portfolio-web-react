@@ -1,15 +1,18 @@
 import './App.css'
-import Navbar from './components/NavInfoBar'
+import Navbar from './components/navbar/NavInfoBar'
+import GetCatFacts from './api/GetCatFacts';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import FooterInfoBar from './components/footer/FooterInfoBar';
 
 function App() {
 
+
   return (
     <>
-    <div>
-      <Navbar></Navbar>
-    </div>
+      <Navbar/>
+      <GetCatFacts />
+      <FooterInfoBar/>
     </>
   )
 }
